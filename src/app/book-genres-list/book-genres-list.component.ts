@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { BookListComponent } from "../books/book-list/book-list.component";
+import { BookGenreModel } from "../shared/book_genre.model";
 @Component({
   selector: 'app-book-genres-list',
   templateUrl: './book-genres-list.component.html',
@@ -7,7 +7,14 @@ import { BookListComponent } from "../books/book-list/book-list.component";
 })
 export class BookGenresListComponent implements OnInit {
 
-  constructor() { }
+  genresArray: BookGenreModel[] = [];
+  constructor() { 
+    this.genresArray = [
+      new BookGenreModel("Adventure", 50),
+      new BookGenreModel("Crime", 10),
+      new BookGenreModel("Sports", 102),
+    ]
+  }
 
   ngOnInit(): void {
   }

@@ -1,1 +1,9 @@
-<p>book-genres-list works!</p>
+<app-book-genres-list-edit></app-book-genres-list-edit>
+<hr>
+<div class="row mb-3">
+    <div class="col-md-4">
+        <ul class="list-group" *ngFor="let genre of genresArray">
+            <a href=""><li class="list-group-item">{{genre.bookGenre}}({{genre.totalBooks}})</li></a>
+        </ul>
+    </div>
+</div>
