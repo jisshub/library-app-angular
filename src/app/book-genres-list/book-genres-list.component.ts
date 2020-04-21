@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { BookListComponent } from "../books/book-list/book-list.component";
 @Component({
   selector: 'app-book-genres-list',
   templateUrl: './book-genres-list.component.html',

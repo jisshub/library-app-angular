@@ -11,9 +11,12 @@ export class BookListComponent implements OnInit {
   constructor() { 
     // instantatiate it in constructor
     this.bookArr = [
-      new BookModel("dasda", 'asdad', 33, 
+      new BookModel("Harry Potter", 'J K Rowling', 3300, 
       "https://images-na.ssl-images-amazon.com/images/I/81YOuOGFCJL.jpg",
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, nisi? Quo voluptate omnis id qui cum quasi at eum maiores.")
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit."),
+      new BookModel("Harry Potter", 'J K Rowling', 3300, 
+      "https://images-na.ssl-images-amazon.com/images/I/81YOuOGFCJL.jpg",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit."),
     ]
   }
 

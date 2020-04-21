@@ -5,18 +5,19 @@
 </div>
 <hr>
 <div class="row mt-2">
-    <div class="col-md-6">
+    <div class="col-xs-12">
         <a href="#" class="list-group-item clearfix" *ngFor="let book of bookArr">
             <div class="float-left">
                 <h4 class="list-group-item-heading">{{book.bookName}}</h4>
                 <p class="list-group-item-text">{{book.bookAuthor}}</p>
                 <p class="list-group-item-text">{{'total pages:'}} {{book.bookPages}}</p>
+                <p class="list-group-item-text">{{book.bookDescription}}</p>
+
             </div>
             <div class="float-right">
                 <img [src]="book.bookImage" [alt]="book.bookName" class="img-fluid rounded"
                 style="max-height: 150px;">
-            </div>
-
-        </a>
+            </div>    
+        </a>            
     </div>
 </div>
