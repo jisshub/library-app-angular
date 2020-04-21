@@ -1,20 +1,22 @@
 <div class="row mt-4">
-    <div class="col-md-4">
+    <div class="col-md-12">
         <button class="btn btn-success">New Book</button>
     </div>
 </div>
-<div class="row">
-    <div class="col-md-7">
-        <div class="card card-body">
+<hr>
+<div class="row mt-2">
+    <div class="col-md-6">
+        <a href="#" class="list-group-item clearfix" *ngFor="let book of bookArr">
+            <div class="float-left">
+                <h4 class="list-group-item-heading">{{book.bookName}}</h4>
+                <p class="list-group-item-text">{{book.bookAuthor}}</p>
+                <p class="list-group-item-text">{{'total pages:'}} {{book.bookPages}}</p>
+            </div>
+            <div class="float-right">
+                <img [src]="book.bookImage" [alt]="book.bookName" class="img-fluid rounded"
+                style="max-height: 150px;">
+            </div>
 
-           <div class="row">
-               <div class="col-md-4 float-left mr-auto">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-               </div>
-                <div class="col-md-3 float-right">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                </div>
-
-        </div>
+        </a>
     </div>
 </div>
