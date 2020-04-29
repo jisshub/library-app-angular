@@ -1,9 +1,10 @@
-<app-header></app-header>
+<!-- event binding on featureChosen event emitter-->
+<app-header (featureChosen)="OnEmitted($event)"></app-header>
 <div class="container">
   <div class="row">
     <div class="col-md-12">
-      <app-books></app-books>
-      <app-book-genres-list></app-book-genres-list>
+      <app-books *ngIf="currentFeature==='books'"></app-books>
+      <app-book-genres-list *ngIf="currentFeature!=='books'"></app-book-genres-list>
     </div>
   </div>
 </div>
