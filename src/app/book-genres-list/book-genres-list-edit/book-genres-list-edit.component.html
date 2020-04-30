@@ -5,20 +5,20 @@
             <div class="col-sm-8">
                 <div class="form-group">
                     <label for="bookGenre">Book Genre</label> 
-                    <input type="text" name="bookGenre" id="bookGenre" class="form-control">        
+                    <input type="text" name="bookGenre" id="bookGenre" class="form-control" #book_genre>        
                 </div>    
             </div>
             <div class="col-sm-4">
                 <div class="form-group">
                     <label for="totalBooks">Total Books</label> 
-                    <input type="number" name="totalBooks" id="totalBooks" class="form-control">        
+                    <input type="text" name="totalBooks" id="totalBooks" class="form-control" #total_books>        
                 </div>
             </div>
         </div>
 
         <div class="row mb-4">
             <div class="col-sm-4">
-                <button type="submit" class="btn btn-success">Add Genre</button>
+                <button type="submit" class="btn btn-success" (click)=onAddGenre()>Add Genre</button>
             </div>
             <div class="col-sm-4">
                 <button class="btn btn-danger">Delete Genre</button>

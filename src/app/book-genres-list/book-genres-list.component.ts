@@ -8,15 +8,16 @@ import { BookGenreModel } from "../shared/book_genre.model";
 export class BookGenresListComponent implements OnInit {
 
   genresArray: BookGenreModel[] = [];
-  constructor() { 
-    this.genresArray = [
-      new BookGenreModel("Adventure", 50),
-      new BookGenreModel("Crime", 10),
-      new BookGenreModel("Sports", 102),
-    ]
-  }
+  constructor() {}
 
   ngOnInit(): void {
+  }
+
+  // definr emethod ijniked in th book0egrne-list view
+  onEmitEvent(getEventData: {genre: string, total: string}){
+    this.genresArray.push(
+      new BookGenreModel(getEventData.genre, getEventData.total)
+    )
   }
 
 }
