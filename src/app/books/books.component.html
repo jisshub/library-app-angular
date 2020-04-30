@@ -1,9 +1,10 @@
 <div class="row">
     <div class="col-md-6">
-        <!-- get emiited data here -->
-        <app-book-list (emitToBooks)="onBookWasSelected($event)"></app-book-list>
+        <!-- get emitted data and store it in srelectdBook property declared in its ts file. -->
+        <app-book-list (emitToBooks)="selectedBook=$event"></app-book-list>
     </div>
     <div class="col-md-6">
-        <app-book-details></app-book-details>
+        <!-- property binding on selectedBook property -->
+        <app-book-details [bookProperty]="selectedBook"></app-book-details> 
     </div>
 </div> 

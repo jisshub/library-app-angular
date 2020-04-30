@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { BookModel } from './books.model';
 
 @Component({
@@ -8,14 +8,12 @@ import { BookModel } from './books.model';
 })
 export class BooksComponent implements OnInit {
 
+  // intialize a property to store the selected book oof type BookModel 
+  selectedBook: BookModel;
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  // define event method here:
-  onBookWasSelected(getData: BookModel){
-
-  }
 
 }
