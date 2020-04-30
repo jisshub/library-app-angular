@@ -1,8 +1,9 @@
 <div class="row">
     <div class="col-md-6">
-        <app-book-list></app-book-list>
+        <!-- get emiited data here -->
+        <app-book-list (emitToBooks)="onBookWasSelected($event)"></app-book-list>
     </div>
     <div class="col-md-6">
         <app-book-details></app-book-details>
     </div>
-</div>
+</div> 

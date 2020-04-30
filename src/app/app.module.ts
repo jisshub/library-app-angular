@@ -8,6 +8,7 @@ import { BookListComponent } from './books/book-list/book-list.component';
 import { BookGenresListComponent } from './book-genres-list/book-genres-list.component';
 import { BookGenresListEditComponent } from './book-genres-list/book-genres-list-edit/book-genres-list-edit.component';
 import { BookDetailsComponent } from './books/book-details/book-details.component';
+import { BookItemComponent } from './books/book-list/book-item/book-item.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { BookDetailsComponent } from './books/book-details/book-details.componen
     BookListComponent,
     BookGenresListComponent,
     BookGenresListEditComponent,
-    BookDetailsComponent
+    BookDetailsComponent,
+    BookItemComponent
   ],
   imports: [
     BrowserModule
